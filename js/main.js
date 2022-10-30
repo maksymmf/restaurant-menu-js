@@ -61,7 +61,7 @@ function menuNav() {
         });
     };
 
-    menuButtons.forEach(button => {
+    menuButtons && menuButtons.forEach(button => {
         button.addEventListener('click', () => {
             const actualButton = button.dataset.filter;
 
@@ -75,4 +75,4 @@ function menuNav() {
     });
 }
 
-menuNav();
+document.addEventListener('DOMContentLoaded', menuNav);

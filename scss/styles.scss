@@ -206,6 +206,10 @@ body {
                     @include sm {
                         font-size: 1rem;
                     }
+
+                    @include xl {
+                        justify-content: flex-end;
+                    }
                 }
             }
 

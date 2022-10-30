@@ -211,6 +211,11 @@ body {
     font-size: 1rem;
   }
 }
+@media (min-width: 1440px) {
+  .menu-items-wrapper .menu-item .item-info .item-title .price {
+    justify-content: flex-end;
+  }
+}
 .menu-items-wrapper .menu-item .item-info .item-descr {
   display: flex;
   align-items: center;
