@@ -1,0 +1,234 @@
+@import '_vars';
+@import 'breakpoints';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $primary-font;
+    background-color: $white-color;
+
+    @include sm {
+        padding: 5% 0;
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 5% 0;
+
+    @include sm {
+        width: 100%;
+    }
+
+    h1 {
+        display: flex;
+        align-self: center;
+        color: $black-color;
+        font-size: 2.2rem;
+        letter-spacing: .3rem;
+        padding-bottom: 2%;
+        border-bottom: 3px solid $brown-color;
+
+        @include xs {
+            border-bottom: none;
+            padding-bottom: 4%;
+        }
+
+        @include sm {
+            font-size: 1.5rem;
+        }
+    }
+
+    .menu-nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 4%;
+
+        @include xs {
+            padding-top: 4%;
+            padding-bottom: 4%;
+        }
+
+        @include sm {
+            padding-top: 2%;
+        }
+
+        .menu-type {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+
+            li {
+                margin: 1%;
+
+                @include xs {
+                    margin: 0.2%;
+                }
+
+                &:first-of-type {
+                    margin-left: 0;
+                }
+
+                a {
+                    color: $brown-color;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    letter-spacing: .1rem;
+                    border: 2px solid $brown-color;
+                    border-radius: 5px;
+                    padding: 3px 6px;
+                    transition: .5s;
+
+                    @include sm {
+                        font-size: .75rem;
+                    }
+
+                    &:hover {
+                        color: $creamy-color;
+                        background-color: $brown-color;
+                    }
+                }
+            }
+
+            //class for active navigation button
+            .active {
+                background-color: $brown-color;
+                color: $creamy-color;
+            }
+        }
+    }
+}
+
+.menu-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1%;
+    justify-content: center;
+    padding: 0 10%;
+
+    @include sm {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+
+        @include sm {
+            align-items: center;
+            margin-bottom: 3%;
+            border-bottom: 1px solid $black-color;
+        }
+
+        @include lg {
+            flex-direction: row;
+        }
+
+        img {
+            display: flex;
+            flex: 1 1 auto;
+            align-items: center;
+            width: 300px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid $brown-color;
+
+            @include xs {
+                width: 255px;
+                height: 127.5px;
+            }
+        }
+
+        .item-info {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 60%;
+            padding: 0;
+
+            @include lg {
+                padding: 0 5%;
+            }
+
+            .item-title {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid $black-color;
+                padding-bottom: 1%;
+
+                @include sm {
+                    align-items: center;
+                    padding-top: 3%;
+                    border-bottom: none;
+                }
+
+                @include xl {
+                    flex-direction: row;
+                }
+
+                h4 {
+                    display: flex;
+                    flex: 1 1 70%;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: $dark-blue-color;
+
+                    @include sm {
+                        padding-bottom: 1%;
+                        font-size: 1rem;
+                    }
+                }
+
+                .price {
+                    display: flex;
+                    flex: 1 1 30%;
+                    padding-left: 1%;
+                    font-size: 1.2rem;
+                    color: $brown-color;
+
+                    @include sm {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .item-descr {
+                display: flex;
+                align-items: center;
+                padding-top: 5%;
+                font-size: 1rem;
+                font-weight: lighter;
+
+                @include sm {
+                    padding-top: 0;
+                    font-size: .75rem;
+                }
+
+                p {
+                    color: $dark-blue-color;
+                }
+            }
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+}

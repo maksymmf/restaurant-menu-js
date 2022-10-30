@@ -1,0 +1,65 @@
+[
+{
+    "type": "breakfast",
+    "img": "./img/pancakes.jpeg",
+    "title": "Buttermilk Pancakes",
+    "price": "$15-99",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+},
+{
+    "type": "lunch",
+    "img": "./img/burger-fries.jpeg",
+    "title": "Burger and Fries",
+    "price": "$13-99",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+},
+{
+    "type": "shakes",
+    "img": "./img/salted-caramel-milkshake.jpeg",
+    "title": "Salted Caramel Milkshake",
+    "price": "$5-99",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+},
+{
+    "type": "shakes",
+    "img": "./img/oreo-milkshake.jpeg",
+    "title": "Oreo Milkshake",
+    "price": "$5-99",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+},
+{
+    "type": "lunch",
+    "img": "./img/egg-burger.jpeg",
+    "title": "Egg Burger",
+    "price": "$15-99",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+},
+{
+    "type": "lunch",
+    "img": "./img/bacon-sandwich.jpeg",
+    "title": "Bacon Sandwich",
+    "price": "$15-99",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+},
+{
+    "type": "dinner",
+    "img": "./img/beef-steak.jpeg",
+    "title": "Beef Steak",
+    "price": "$24-99",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+},
+{
+    "type": "dinner",
+    "img": "./img/tomahawk-steak.jpeg",
+    "title": "Tomahawk Steak",
+    "price": "$49-99",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+},
+{
+    "type": "breakfast",
+    "img": "./img/country-breakfast.webp",
+    "title": "Country Breakfast",
+    "price": "$14-99",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+}
+]
